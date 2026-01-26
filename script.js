@@ -1,5 +1,5 @@
 // Terminal typing intro
-const text = "whoami\nKent — Security Engineer / SysAdmin";
+const text = "whoami\nKent — Platform and Security Engineer / SysAdmin";
 let i = 0;
 const speed = 50;
 const typedText = document.getElementById("typed-text");
