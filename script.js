@@ -1,5 +1,5 @@
 // Terminal typing intro
-const text = "whoami\nKent — Platform and Security Engineer / SysAdmin";
+const text = "whoami\nKent — Platform and Security Engineer";
 let i = 0;
 const speed = 50;
 const typedText = document.getElementById("typed-text");
@@ -57,7 +57,7 @@ input.addEventListener("keydown", e => {
 
     switch (cmd) {
       case "whoami":
-        response = "Kent — Platform and Security Engineer / SysAdmin";
+        response = "Kent — Platform and Security Engineer";
         break;
       case "skills":
         response = "Windows, Linux, Networking, Security, Labs";
