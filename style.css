@@ -1,0 +1,142 @@
+:root {
+  --bg: #0b0d10;
+  --fg: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #22d3ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+/* Cursor prompt */
+#cursor-prompt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: var(--accent);
+  opacity: 0.6;
+  font-family: monospace;
+  transition: opacity 0.3s;
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#terminal {
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* Terminal blocks */
+.terminal-block {
+  background: #020617;
+  padding: 1.2rem;
+  border-radius: 8px;
+  font-family: monospace;
+  color: var(--accent);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.2rem;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.15);
+}
+
+/* Mini terminal */
+.mini-terminal {
+  background: #020617;
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+.mini-terminal input {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--fg);
+  width: 80%;
+}
+
+#terminal-output {
+  margin-top: 0.5rem;
+  color: var(--accent);
+}
+
+/* Fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.email {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
