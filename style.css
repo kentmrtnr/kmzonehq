@@ -140,3 +140,20 @@ h2 {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+.thm-section {
+  text-align: center;
+}
+.thm-link {
+  display: inline-block;
+  margin-top: .8rem;
+  padding: .6rem 1rem;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.thm-link:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
