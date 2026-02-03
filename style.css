@@ -157,3 +157,9 @@ h2 {
   background: var(--accent);
   color: var(--bg);
 }
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
